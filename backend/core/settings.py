@@ -150,3 +150,12 @@ CORS_ALLOWED_ORIGINS = [
     "https://localhost:4200",
     "https://127.0.0.1:4200",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ],
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticated",
+    ],
+}
