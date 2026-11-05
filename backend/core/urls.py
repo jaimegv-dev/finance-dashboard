@@ -26,6 +26,7 @@ urlpatterns = [
 
     # API
     path('api/', include("transactions.urls")),
+    path('api/', include("accounts.urls")),
 
     #Authentication JWT
     path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
