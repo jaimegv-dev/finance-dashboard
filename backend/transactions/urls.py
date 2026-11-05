@@ -3,7 +3,7 @@ from .views import CategoryViewSet, TransactionViewSet
 
 router = DefaultRouter()
 
-router.register("categories", CategoryViewSet)
-router.register("transactions", TransactionViewSet)
+router.register("categories", CategoryViewSet, basename="category")
+router.register("transactions", TransactionViewSet, basename="transaction")
 
 urlpatterns = router.urls
