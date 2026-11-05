@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     "corsheaders",
 
     #APPS
-    "transactions.apps.TransactionsConfig",
+    "transactions",
+    "accounts",
 ]
 
 MIDDLEWARE = [
